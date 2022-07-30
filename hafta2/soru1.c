@@ -3,7 +3,8 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int hesapla(int x,int gecme){
-    int i,puan,ogrenciler[100],kalanlar=0,toplam=0;
+    int i,puan,ogrenciler[100],kalanlar=0;
+    float toplam=0;
     for(i=0;i<x;i++){
         printf("%d. Ogrencinin notunu girin: ",i+1);
         scanf("%d",&puan);
@@ -13,7 +14,7 @@ int hesapla(int x,int gecme){
             kalanlar+=1;
         }
     }
-    printf("Ortalama: %d",toplam/x);
+    printf("Ortalama: %.2f",toplam/x);
     return kalanlar;
     
 }
