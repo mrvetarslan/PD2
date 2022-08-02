@@ -17,7 +17,7 @@ int main(int argc, char *argv[]){
     scanf("%d",&sayi);
     printf("Ussu girin: ");
     scanf("%d",&us);
-    usAlma(sayi,us);
+    
     printf("Bu sayinin ussu: %d",usAlma(sayi,us));
     return 0;
 }
